@@ -66,7 +66,7 @@ useEffect(() => {
                transition={{ duration: 1 }}
                className="space-y-6 col-span-2 text-left pt-12"
              >
-               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+               <h1 className="text-2xl md:text-5xl font-bold text-white mb-4">
                  {slides[currentSlide].title} <span className="block text-gray-300">{slides[currentSlide].subtitle}</span>
                </h1>
              </motion.div>
@@ -114,30 +114,24 @@ useEffect(() => {
        </div>
 
        {/* Navigation at bottom */}
-       <div className="relative -mb-8">
+       <div className="relative -mb-12">
          {/* Slide Navigation */}
-         <div className="flex space-x-4">
+         <div className="flex items-center pl-8">
            {slides.map((_, index) => (
-             <button
-               key={index}
-               onClick={() => handleDotClick(index)}
-               className={`text-white transition-opacity duration-300 ${
-                 currentSlide === index ? "opacity-100" : "opacity-60"
-               }`}
-             >
-               {String(index + 1).padStart(2, "0")}
-             </button>
+             <div key={index} className="flex items-center">
+               <button
+                 onClick={() => handleDotClick(index)}
+                 className={`text-lg font-medium transition-colors duration-300 px-4 ${
+                   currentSlide === index ? "text-white" : "text-white opacity-60"
+                 }`}
+               >
+                 {String(index + 1).padStart(2, "0")}
+               </button>
+               {currentSlide === index && index < slides.length - 1 && (
+                 <div className="w-12 h-[1px] bg-white"></div>
+               )}
+             </div>
            ))}
-         </div>
-
-         {/* Navigation Arrows */}
-         <div className="flex space-x-4 mt-4">
-           <button onClick={handlePrev} className="text-white hover:text-gray-300 transition-colors">
-             ←
-           </button>
-           <button onClick={handleNext} className="text-white hover:text-gray-300 transition-colors">
-             →
-           </button>
          </div>
        </div>
      </div>

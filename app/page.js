@@ -12,11 +12,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ContentSection
-        imageUrl="./brown.jpg"
+        imageUrl="/brown.jpg"
         title="Galvanize, Ghana’s premier talent management agency is committed to empowering African influencers, content creators, and gifted individuals to hone their craft and build careers from what they love."
         buttonLink="/"
         buttonText="Who We Are"
         index={0}
+        imageLeft={false}
       />
       <ContentSection
         imageUrl="/african.jpg"
@@ -24,14 +25,15 @@ export default function Home() {
         buttonLink="/"
         buttonText="Find Out More"
         index={1}
-        imageLeft={false}
+        imageLeft={true}
       />
       <ContentSection
-        imageUrl="podcaster.jpg"
+        imageUrl="/podcaster.jpg"
         title="Whether you’re an amateur or a pro, we’ll help you find your voice and amplify it to the world—be as loud as you want"
         buttonLink="/link3"
         buttonText="What We Do"
         index={2}
+        imageLeft={false}
       />
       <Services />
       <Testimonials />
