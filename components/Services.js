@@ -70,7 +70,7 @@ export default function Services() {
 
   return (
     <section className="py-20 overflow-hidden bg-black">
-      <div className="mb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <h2 className="text-3xl font-bold mb-4 text-white">Our Services</h2>
         <p className="text-xl text-gray-400">Discover how we can help you grow</p>
       </div>
@@ -108,7 +108,7 @@ export default function Services() {
               <div className="absolute bottom-8 left-8 space-y-4">
                 <div className="flex -space-x-4 object-cover">
                   {service.images.map((img, i) => (
-                    <div key={i} className="w-12 h-12 rounded-full border-2 border-white overflow-hidden relative">
+                    <div key={i} className="w-9 h-9 rounded-full border-2 border-white overflow-hidden relative">
                       <Image
                         src={img || "/african.jpg"}
                         alt={`${service.title} ${i + 1}`}

@@ -4,68 +4,9 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">SUBSCRIBE TO OUR NEWSLETTER</h3>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Email address"
-                className="bg-transparent border-b border-white/20 px-4 py-2 flex-grow focus:outline-none focus:border-white"
-              />
-              <button className="ml-4 text-white/50 hover:text-white">→</button>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-8">
-            <div>
-              <h4 className="text-sm font-semibold mb-4">MENU</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Talent
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-4">SERVICES</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Broadcast
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Social
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Commercial
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Publishing
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-between items-center pt-8 border-t border-white/10">
-          <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-12">
             <a href="#" className="text-gray-400 hover:text-white">
               <span className="sr-only">Instagram</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -89,7 +30,84 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-          <p className="text-gray-400 text-sm">© {new Date().getFullYear()} NOM. All rights reserved.</p>
+            <h3 className="text-xl font-bold mb-4">SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <div className="flex ">
+              <input
+                type="email"
+                placeholder="Email address"
+                className="bg-transparent border-b border-white/20 px-4 py-2 w-5px flex-grow focus:outline-none focus:border-white "
+              />
+              <button className="ml-4 text-white/50 hover:text-white">→</button>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-8">
+            <div className="col-span-1">
+              <h4 className="text-sm font-semibold mb-4">MENU</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm">
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-2">
+              <h4 className="text-sm font-semibold mb-4">SERVICES</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  End-to-End Talent Representation
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  PR & Brand Management
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  Reputation & Crisis Management
+
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                    Brand Deal Pitching
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  Content Strategy & Growth
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  Creative Development & Road Management
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between items-center pt-8 border-t border-white/80">
+          
+          <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Galvanize. All rights reserved. Powered by Bloop Global LLC</p>
         </div>
       </div>
     </footer>

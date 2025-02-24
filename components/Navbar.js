@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Navbar() {0
   return (
     <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} className="fixed w-full z-50 bg-[#199AA1] backdrop-blur-sm">
-     <div className=" py-2 px-8 max-w-10xl mx-auto sm:px-6 lg:px-8">
+     <div className=" py-2 px-8 max-w-10xl mx-auto sm:px-6 lg:px-8 ">
        <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 ">
             <Link href="/" className="text-primary text-2xl font-bold">

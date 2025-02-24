@@ -66,7 +66,7 @@ export default function Testimonials() {
               {testimonials.map((testimonial, index) => (
                 <motion.div
                   key={index}
-                  className="flex-none w-[400px] p-8 rounded-3xl bg-white shadow-md"
+                  className="flex-none w-[400px] p-8 rounded-xl bg-white shadow-md"
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
@@ -87,7 +87,7 @@ export default function Testimonials() {
                   
                  </div>
                  </div>
-                 <p className="text-gray-600 mb-4">{testimonial.text}</p>
+                 <p className="text-black text-sm font-medium mb-12">{testimonial.text}</p>
                 </motion.div>
               ))}
             </div>
