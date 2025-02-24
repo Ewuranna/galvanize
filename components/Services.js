@@ -11,7 +11,13 @@ const services = [
     description: "Adopt a scaly and fascinating reptile.",
     color: "bg-[#E8F87C]",
     icon: "🦎",
-    images: Array(5).fill("/african-lady-creator.jpg"),
+    images: [
+      "/brown.jpg",
+      "/podcaster.jpg",
+      "/african.jpg",
+      "/Galvanize logo.jpg",
+      "/african.jpg"
+    ].map(img => img || "/podcaster.jpg"),
     link: "/services/talent-representation"
   },
   {
@@ -19,7 +25,7 @@ const services = [
     description: "Adopt a beautiful and intelligent avian friend.",
     color: "bg-[#FF8B94]",
     icon: "🐦",
-    images: Array(5).fill("/african-lady-creator.jpg"),
+    images: Array(5).fill("/african lady creator.jpg"),
     link: "/services/pr-brand-management"
   },
   {
@@ -27,7 +33,7 @@ const services = [
     description: "Adopt a cuddly and playful feline companion.",
     color: "bg-[#FFC75F]",
     icon: "🐱",
-    images: Array(5).fill("/african-lady-creator.jpg"),
+    images: Array(5).fill("/african lady creator.jpg"),
     link: "/services/crisis-management"
   },
   {
@@ -35,7 +41,7 @@ const services = [
     description: "Adopt a loyal and loving canine friend.",
     color: "bg-[#845EC2]",
     icon: "🐕",
-    images: Array(5).fill("/african-lady-creator.jpg"),
+    images: Array(5).fill("/african lady creator.jpg"),
     link: "/services/brand-deals"
   },
   {
@@ -43,7 +49,7 @@ const services = [
     description: "Adopt a loyal and loving canine friend.",
     color: "bg-[#845EC2]",
     icon: "🐕",
-    images: Array(5).fill("/african-lady-creator.jpg"),
+    images: Array(5).fill("/brown.jpg"),
     link: "/services/content-strategy"
   },
   {
@@ -51,7 +57,7 @@ const services = [
     description: "Adopt a loyal and loving canine friend.",
     color: "bg-[#845EC2]",
     icon: "🐕",
-    images: Array(5).fill("/african-lady-creator.jpg"),
+    images: Array(5).fill("/podcaster.jpg"),
     link: "/services/creative-development"
   },
 ]
@@ -100,14 +106,14 @@ export default function Services() {
               </Link>
 
               <div className="absolute bottom-8 left-8 space-y-4">
-                <div className="flex -space-x-4">
+                <div className="flex -space-x-4 object-cover">
                   {service.images.map((img, i) => (
-                    <div key={i} className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
+                    <div key={i} className="w-12 h-12 rounded-full border-2 border-white overflow-hidden relative">
                       <Image
                         src={img || "/african.jpg"}
                         alt={`${service.title} ${i + 1}`}
-                        width={25}
-                        height={25}
+      
+                        layout="fill"
                         className="object-cover"
                       />
                     </div>
