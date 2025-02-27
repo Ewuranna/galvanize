@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -45,24 +46,24 @@ export default function Footer() {
               <h4 className="text-sm font-semibold mb-4">MENU</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  <Link href="/" className="text-gray-400 text-sm hover:text-white">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm">
+                  <Link href="/about" className="text-gray-400 hover:text-white text-sm">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm">
+                  <Link href="/gallery" className="text-gray-400 hover:text-white text-sm">
                     Gallery
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm">
+                  <Link href="/contact" className="text-gray-400 hover:text-white text-sm">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -70,35 +71,35 @@ export default function Footer() {
               <h4 className="text-sm font-semibold mb-4">SERVICES</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  <Link href="/services/talent-representation" className="text-gray-400 text-sm hover:text-white">
                   End-to-End Talent Representation
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  <Link href="/services/pr-brand-management" className="text-gray-400 text-sm hover:text-white">
                   PR & Brand Management
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  <Link href="/services/crisis-management" className="text-gray-400 text-sm hover:text-white">
                   Reputation & Crisis Management
 
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  <Link href="/services/brand-deals" className="text-gray-400 text-sm hover:text-white">
                     Brand Deal Pitching
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  <Link href="/services/content-strategy" className="text-gray-400 text-sm hover:text-white">
                   Content Strategy & Growth
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 text-sm hover:text-white">
+                  <Link href="/services/creative-development" className="text-gray-400 text-sm hover:text-white">
                   Creative Development & Road Management
-                  </a>
+                  </Link>
                 </li>
 
               </ul>

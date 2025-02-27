@@ -18,7 +18,7 @@ const services = [
       "/Galvanize logo.jpg",
       "/african.jpg"
     ].map(img => img || "/podcaster.jpg"),
-    link: "/services/talent-representation"
+    link: "/services#talent-representation"
   },
   {
     title: "PR & Brand Management",
@@ -26,7 +26,7 @@ const services = [
     color: "bg-[#FF8B94]",
     icon: "🐦",
     images: Array(5).fill("/african lady creator.jpg"),
-    link: "/services/pr-brand-management"
+    link: "/services#pr-brand-management"
   },
   {
     title: "Reputation & Crisis Management",
@@ -34,7 +34,7 @@ const services = [
     color: "bg-[#FFC75F]",
     icon: "🐱",
     images: Array(5).fill("/african lady creator.jpg"),
-    link: "/services/crisis-management"
+    link: "/services#crisis-management"
   },
   {
     title: "Brand Deal Pitching",
@@ -42,7 +42,7 @@ const services = [
     color: "bg-[#845EC2]",
     icon: "🐕",
     images: Array(5).fill("/african lady creator.jpg"),
-    link: "/services/brand-deals"
+    link: "/services#brand-deals"
   },
   {
     title: "Content Strategy & Growth",
@@ -50,7 +50,7 @@ const services = [
     color: "bg-[#845EC2]",
     icon: "🐕",
     images: Array(5).fill("/brown.jpg"),
-    link: "/services/content-strategy"
+    link: "/services#content-strategy"
   },
   {
     title: "Creative Development & Road Management",
@@ -58,7 +58,7 @@ const services = [
     color: "bg-[#845EC2]",
     icon: "🐕",
     images: Array(5).fill("/podcaster.jpg"),
-    link: "/services/creative-development"
+    link: "/services#creative-development"
   },
 ]
 
